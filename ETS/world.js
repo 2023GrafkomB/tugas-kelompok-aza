@@ -29,7 +29,7 @@ export const world = (() => {
 
       const loader = new FBXLoader();
       loader.setPath('./resources/DesertPack/FBX/');
-      loader.load('Cactus3.fbx', (fbx) => {
+      loader.load('Barricade.fbx', (fbx) => {
         fbx.scale.setScalar(0.01);
 
         this.mesh = fbx;

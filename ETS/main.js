@@ -4,6 +4,7 @@ import { player } from "./player.js";
 import { world } from "./world.js";
 import { background } from "./background.js";
 
+
 const _VS = `
 varying vec3 vWorldPosition;
 void main() {
@@ -330,7 +331,7 @@ class BasicWorldDemo {
     }
 }
 
-let _APP = null;
+
 
 window.addEventListener("DOMContentLoaded", () => {
     _APP = new BasicWorldDemo();
