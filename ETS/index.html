@@ -1,43 +1,36 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Boxy Run</title>
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-		<script type="text/javascript" src="js/three.min.js"></script>
-        <script type="text/javascript" src="js/game.js"></script>
-		<link href="style.css" rel="stylesheet">
-	</head>
-	<body>
-		<div class="panel">
-			<div class="game-title">
-				<div class="title">boxy run</div>
-			</div>
-			<div class="stat">
-				<label>Score</label>
-				<p id="score">0</p>
-			</div>
-			<table id="controls">
-			  	<tr>
-			    	<td>Up:</td>
-			    	<td>Jump</td>
-			  	</tr>
-			  	<tr>
-			    	<td>Left:</td>
-			    	<td>Left lane switch</td>
-			  	</tr>
-			  	<tr>
-			    	<td>Right:</td>
-			    	<td>Right lane switch</td>
-			  	</tr>
-			  	<tr>
-			    	<td>p:</td>
-			    	<td>Pause</td>
-			  	</tr>
-			</table>
-			<table id="ranks"></table>
-			<div class="animate-flicker" id="variable-content">Press any button to begin</div>
-		</div>
-		<div id="world"></div>
-			
-		</div>
-	</body>
+<head>
+  <title>Running AZA</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+  <script src="./main.js" type="module">
+  </script>
+  <div class="container" id="container">
+    <div class="ui">
+      <div class="score-layout">
+        <div class="score-text" id="score-text">
+          00000
+        </div>
+      </div>
+    </div>
+    <div class="ui">
+      <div class="game-over-layout" id="game-over">
+        <div class="game-over-text">GAME OVER</div>
+      </div>      
+    </div>
+    <div class="ui">
+      <div class="game-menu-layout" id="game-menu">
+        <div class="game-menu-window">
+          <img src="./Untitled design.png"></img>
+          <h1>Running AZA</h1>
+          <p>Never Stop Exploring</p>
+          <p id="error">Adventure Time</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
